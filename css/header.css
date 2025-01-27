@@ -1,0 +1,256 @@
+/* Header Styles */
+.header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.header_banner {
+  align-items: center;
+  background-color: #44883e;
+  color: #fff;
+  display: flex;
+  font-family: Archer, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  height: 32px;
+  justify-content: center;
+  line-height: 17px;
+  max-width: 1440px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.header_banner a {
+  text-decoration: none;
+}
+
+.header_inner_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 810px;
+}
+
+.swheader {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.swheader__button {
+  background: url(https://pmu.se/wp-content/plugins/af-swish/public/images/swish_logo.svg)
+    no-repeat 50%;
+  border: 0;
+  height: 26px;
+  width: 25px;
+}
+
+.logo-text {
+  color: #fff;
+  font-family: Archer;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 10px;
+  max-width: 61px;
+  text-align: left;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  align-items: center;
+  display: flex;
+  margin: 2px 15px 0;
+  position: relative;
+}
+
+.search-form .toggle-search {
+  background-color: #000;
+  background-image: url(https://pmu.se/wp-content/themes/pmu/assets/img/search-white.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 21px;
+  cursor: pointer;
+  height: 41px;
+  width: 39px;
+  z-index: 9;
+}
+
+.header__inner .cart-trigger,
+.header__inner .cart-trigger-prevent {
+  cursor: pointer;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.header__inner .cart-trigger-prevent__wrapper,
+.header__inner .cart-trigger__wrapper {
+  margin-top: 3px;
+  position: relative;
+}
+
+.header_inner {
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  display: flex;
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: space-between;
+  line-height: 16px;
+  max-height: 67px;
+  padding-bottom: 16px;
+  padding-left: 88px;
+  padding-right: 56px;
+  padding-top: 16px;
+}
+
+.header_inner div {
+  align-items: center;
+}
+
+#menu-item {
+  color: #fff;
+  font-family: Archer, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  margin-right: 56px;
+  padding-right: 24px;
+  pointer-events: none;
+  position: relative;
+  text-decoration: none;
+  z-index: 9;
+}
+
+.header_inner_logo {
+  margin-top: 48px;
+  max-width: 115px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+#menu-item .menu-item-has-children {
+  align-items: center;
+}
+
+.header__inner a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.header-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav > li {
+  position: relative;
+  margin-right: 30px;
+}
+
+.header-nav > li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.header-nav > li a:hover {
+  color: #00ff00;
+}
+
+.header-nav > li .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 10px 0;
+  display: none;
+  list-style: none;
+  margin: 0;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-nav > li .sub-menu li {
+  padding: 5px 15px;
+}
+
+.header-nav > li .sub-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.header-nav > li .sub-menu li a:hover {
+  color: #00ff00;
+}
+
+.header-nav > li:hover .sub-menu {
+  display: block;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding-right: 40px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.cart-trigger__wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 49px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__inner {
+    flex-wrap: wrap;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-nav > li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

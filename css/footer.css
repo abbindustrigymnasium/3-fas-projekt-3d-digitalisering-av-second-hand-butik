@@ -1,0 +1,152 @@
+/* Footer Styles */
+.footer-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 49px;
+  padding-bottom: 49px;
+  background-color: #111;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+section {
+  display: block;
+}
+
+article {
+  display: block;
+}
+
+.footer-section .upper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 780px;
+  min-width: 170px;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-left: 60px;
+}
+
+.footer-social-media ul {
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.footer-social-media ul li {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul {
+  padding-inline-start: 0px;
+  box-sizing: border-box;
+}
+
+.footer-social-media ul li img {
+  height: 16px;
+  object-fit: contain;
+  width: 16px;
+}
+
+.footer-social-media ul li a {
+  color: #fff;
+  font-family: Archer, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+.footer-contact-info {
+  display: flex;
+}
+
+.footer-contact-info pre {
+  color: #fff;
+  font-family: Archer, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 69px;
+  white-space: pre-wrap;
+}
+
+.footer-contact-info pre:last-of-type {
+  margin: 0;
+}
+
+ul,
+pre {
+  border: 0;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.footer-section .lower-wrapper {
+  margin-top: 10px;
+  max-width: 780px;
+  min-width: 190px;
+  width: 100%;
+}
+
+.footer-section .lower-wrapper ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-section .lower-wrapper ul li {
+  margin-right: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-section .lower-wrapper img {
+  max-width: 136px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex-direction: row;
+  }
+
+  .upper-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social-media,
+  .footer-contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-social-media ul {
+    justify-content: center;
+  }
+
+  .footer-contact-info {
+    flex-direction: column;
+  }
+
+  .footer-contact-info pre {
+    text-align: left;
+  }
+
+  .lower-wrapper ul {
+    text-align: right;
+    flex-direction: column;
+    align-items: center;
+  }
+}

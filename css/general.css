@@ -1,0 +1,20 @@
+/* General Styles */
+* {
+  font-family: Archer;
+}
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 66px 0 0 !important;
+  padding-top: 95px !important;
+  font-family: Archer;
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMU</title>
+    <link href="https://fonts.cdnfonts.com/css/archer-2" rel="stylesheet" />
+    <link rel="stylesheet" href="HomeSite/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/general.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="header_banner">
+        <a href="https://pmu.se/bistand/sidabeslut/">
+          <span style="font-size: 12pt; color: #ffffff">
+            Ge bort en julklapp som gör skillnad!
+          </span>
+        </a>
+      </div>
+
+      <div class="header_inner">
+        <!-- Logotyp för hemsidan -->
+        <a href="index.html">
+          <img
+            class="header_inner_logo"
+            src="https://pmu.se/wp-content/themes/pmu/assets/img/header_logo.png"
+          />
+        </a>
+        <div class="header_inner_actions">
+          <div class="header_inner_navbar">
+            <div class="header__inner">
+              <div class="header__inner--nav">
+                <ul id="header-nav" class="header-nav">
+                  <li id="menu-item-1" class="menu-item menu-item-has-children">
+                    <a href="#">Stöd oss</a>
+                    <img
+                      style="cursor: pointer"
+                      src="https://pmu.se/wp-content/themes/pmu/assets/img/nav-arrow-green.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="menu-item-2" class="menu-item menu-item-has-children">
+                    <a href="#">Vårt arbete</a>
+                    <img
+                      style="cursor: pointer"
+                      src="https://pmu.se/wp-content/themes/pmu/assets/img/nav-arrow-green.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="menu-item-3" class="menu-item menu-item-has-children">
+                    <a href="#">Second Hand</a>
+                    <img
+                      style="cursor: pointer"
+                      src="https://pmu.se/wp-content/themes/pmu/assets/img/nav-arrow-green.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Swish-knapp för donationer -->
+              <span id="ktkheader">
+                <div class="swheader">
+                  <div class="logo-wrapper">
+                    <button class="swheader__button swish_button"></button>
+                    <p class="logo-text">Swisha en gåva</p>
+                  </div>
+                </div>
+              </span>
+              <form
+                id="searchform"
+                class="search-form"
+                role="search"
+                method="get"
+                action="https://pmu.se/"
+              >
+                <div class="toggle-search"></div>
+              </form>
+              <div class="cart-trigger__wrapper">
+                <a class="cart-trigger-wrapper" href="#">
+                  <img
+                    class="cart-trigger-prevent"
+                    src="https://pmu.se/wp-content/themes/pmu/assets/img/toggle-cart.svg"
+                  />
+                </a>
+              </div>
+              <article style="padding-top: 3px; cursor: pointer">
+                <img
+                  onclick="openNav()"
+                  class="header__inner--hamburger"
+                  src="https://pmu.se/wp-content/themes/pmu/assets/img/hamburger.svg"
+                />
+              </article>
+              <div id="myNav" class="overlay" onclick="closeNav(event)">
+                <!-- Close Button -->
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav(event)"
+                  >&times;</a
+                >
+
+                <!-- Overlay Content -->
+                <div class="overlay-content" onclick="event.stopPropagation()">
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Butikens sektion med information om läge och öppettider -->
+    <section class="store">
+      <article class="store_hero">
+        <div
+          class="store_hero_background"
+          style="background-image: url(HomeSite/imagesHomePage/bg.jpg)"
+        >
+          <div class="store-info">
+            <div class="store_title_left">
+              <div class="main-title">
+                <h2>Västerås</h2>
+                <p>Adress</p>
+                <p>Hallsta gårdsgata 11, 721 38 VÄSTERÅS</p>
+                <p>021-450 50 10, vasteras@pmu.se</p>
+              </div>
+              <div class="title-times">
+                <h2>Butik</h2>
+                <p>Måndag 10-18</p>
+                <p>Tisdag 10-18</p>
+                <p>Onsdag 10-18</p>
+                <p>Torsdag 10-18</p>
+                <p>Fredag 10-18</p>
+                <p>Lördag 10-16</p>
+                <p style="display: inline-block">
+                  I samband med helgdagar - se "Avvikande öppetider"
+                </p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="store_title_right">
+                <h2>Gåvomottagning</h2>
+                <p>Måndag 8-18</p>
+                <p>Tisdag 8-18</p>
+                <p>Onsdag 8-18</p>
+                <p>Torsdag 8-18</p>
+                <p>Fredag 8-18</p>
+                <p>Lördag 8-16</p>
+                <p>I samband med helgdagar - se "Avvikande öppetider"</p>
+                <div class="buttons">
+                  <a href="#" target="_blank">Sociala Medier</a>
+                  <a href="#" target="_blank">Boka lånesläp</a>
+                  <a href="indexrightside.html">360 vy</a>
+                  <a
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                  >
+                    Reklamfilm
+                  </a>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Informationstavla med nyheter och andra sektioner -->
+    <section class="information_board">
+      <div class="first-container">
+        <div class="content-section">
+          <div>
+            <h2>Nyheter</h2>
+            <p>Vintage hörnan är här!</p>
+            <p>
+              Vi är glada att introducera vår nya Vintage-hörna – ett noga
+              utvalt sortiment av unika och klassiska fynd från 70-, 80- och
+              90-talet. Från retrokläder och ikoniska accessoarer till
+              inredningsdetaljer med charm och historia. Perfekt för dig som
+              vill ge din stil eller ditt hem en personlig och hållbar touch!
+            </p>
+            <img src="HomeSite/imagesHomePage/Inside.jpg" alt="" />
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview-images">
+            <a href="indexrightside.html">
+              <img
+                style="display: block"
+                src="360Site/images/3Lekrummet.png"
+                alt=""
+              />
+            </a>
+            <a href="indexrightside.html">
+              <img
+                style="display: block"
+                src="360Site/images/7Barn.png"
+                alt=""
+              />
+            </a>
+            <a href="indexrightside.html">
+              <img
+                style="display: block"
+                src="360Site/images/9Husgegård.png"
+                alt=""
+              />
+            </a>
+            <a href="indexrightside.html">
+              <img
+                style="display: block"
+                src="360Site/images/12Elektronik.png"
+                alt=""
+              />
+            </a>
+            <a href="indexrightside.html">
+              <img
+                style="display: block"
+                src="360Site/images/16Textiler.png"
+                alt=""
+              />
+            </a>
+            <a href="indexrightside.html">
+              <img
+                style="display: block"
+                src="360Site/images/15Böcker&Kassa.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="content-section cafe">
+          <h2>Cafe</h2>
+          <p>Café Hörnan – En paus med smak</p>
+          <p>
+            Mitt i secondhandbutiken hittar du Café Hörnan, en mysig oas där du
+            kan ta en välförtjänt paus. Vi erbjuder nybryggt kaffe, te och
+            härliga bakverk, allt i en avslappnad atmosfär. Oavsett om du är här
+            för att shoppa eller bara vill njuta av en fika, är Café Hörnan den
+            perfekta platsen att landa en stund.
+          </p>
+          <img src="360Site/images/2Cafet.png" alt="" />
+        </div>
+        <div class="content-section karta">
+          <h2>Hitta hit</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d258347.1077569849!2d15.849735689062493!3d59.610755099999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e632c7d621049%3A0x41061f5bb4047c3c!2sPMU%20Second%20Hand!5e0!3m2!1sen!2sse!4v1732310028628!5m2!1sen!2sse"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="third-container">
+        <div class="content-section">
+          <div class="mer-info">
+            <h2>Mer Info</h2>
+            <p>
+              I butiken säljs begagnade möbler, kläder, porslin, textil,
+              husgeråd, böcker, mattor, belysning, tavlor, leksaker,
+              fritidsprylar och teknik. Alla varor är skänkta till oss och
+              säljes i befintligt skick.
+            </p>
+            <p>
+              Butiken drivs tillsammans med Pingstkyrkan i Västerås och butikens
+              överskott delas med dem. Läs mer om verksamheten och vad den delen
+              av överskottet till används till:
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <div class="faq">
+            <div class="question">
+              <h3>Avvikande öppetider</h3>
+              <svg width="15" height="10" viewbox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="answer">
+              <p>
+                <span class="separated-text"
+                  >Röda dagar är butiken vanligtvis stängd.</span
+                >
+                <br />
+                Avvikande öppettider:
+                <br />
+                <span class="separated-text2">Långfredag</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Annandag påsk</span>
+                öppet 10-16
+                <br />
+                <span class="separated-text2">1 maj öppet</span>
+                10-16
+                <br />
+                <span class="separated-text2">Kristihimmelsfärdsdag</span>
+                öppet 10-16
+                <br />
+                <span class="separated-text2">Nationaldagen</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Midsommarafton</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Midsommardagen</span>
+                Stängt
+                <br />
+                <span class="separated-text2">23 december</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Julafton</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Juldagen</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Annandag jul</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Nyårsafton</span>
+                Stängt
+                <br />
+                <span class="separated-text2">Nyårsdagen</span>
+                Stängt
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Gåvomottagning</h3>
+              <svg width="15" height="10" viewbox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="answer">
+              <p class="separated-text2">
+                Vi tar emot hela och rena gåvor. Vänligen lämna gåvor under
+                öppettiderna, ställ inte något utanför då det blir förstört.
+                Tack för din gåva!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Gratis lånesläp</h3>
+              <svg width="15" height="10" viewbox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="answer">
+              <p class="separated-text2">
+                Låna släp gratis!
+                <br />
+                Hämta släpet på plats utan kostnad,
+                <br />
+                eller förboka i appen mot en adminavgift på 49 kr.
+                <br />
+                <a style="color: rgb(68, 136, 62)" href="#"
+                  >Ladda ner app eller boka online</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Gratis hämtning</h3>
+              <svg width="15" height="10" viewbox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="answer">
+              <p class="separated-text2">
+                Har ni mycket saker, skrymmande möbler eller ett dödsbo så kan
+                ni boka en kostnadsfri hämtning. Vi tar emot möbler i säljbart
+                skick, hela och rena, som kommer från rökfritt hushåll. Skicka
+                bilder på de möbler du önskar få hämtade till
+                <a style="color: rgb(68, 136, 62)" href="">vasteras@pmu.se</a>
+
+                så återkommer vi för att boka en tid.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Cafe</h3>
+              <svg width="15" height="10" viewbox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="answer">
+              <p class="separated-text2">
+                <span style="display: block"
+                  >Vårt café erbjuder enklare förtäring.</span
+                >
+                <br />
+                Vi serverar bland annat fikabröd och mackor
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Volontär</h3>
+              <svg width="15" height="10" viewbox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="answer">
+              <p class="separated-text2">
+                <a style="color: rgb(68, 136, 62)" href="#">Läs mer</a>
+                <br />
+                om vad det innebär att vara volontär hos oss och anmäl gärna
+                ditt intresse. Du är också välkommen in i butiken så berättar vi
+                mer!
+                <br />
+                Första måndagen i varje månad kl 18.00 har vi volontärsträff med
+                information – välkommen då!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3>Om butiken</h3>
+              <svg width="15" height="10" viewbox="0 0 42 25">
+                <path
+                  d="M3 3L21 21L39 3"
+                  stroke="white"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="answer">
+              <p class="separated-text2">
+                <span style="display: block">
+                  I butiken säljs begagnade möbler, kläder, porslin, textil,
+                  husgeråd, böcker, mattor, belysning, tavlor, leksaker,
+                  fritidsprylar och teknik. Alla varor är skänkta till oss och
+                  säljes i befintligt skick.
+                </span>
+                <br />
+                <span style="display: block">
+                  Butiken drivs tillsammans med Pingstkyrkan i Västerås och
+                  butikens överskott delas med dem. Läs mer om verksamheten och
+                  vad den delen av överskottet till används till:
+                </span>
+                <br />
+
+                <a style="color: rgb(68, 136, 62)" href="#">Pingstkyrkan</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-sektionen -->
+    <section class="footer-section">
+      <article class="upper-wrapper">
+        <div class="footer-social-media">
+          <ul>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Group-428.png"
+              />
+              <a href="https://www.youtube.com/user/PMUchannel">Youtube</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Icon-2.png"
+              />
+              <a href="https://www.facebook.com/PMUfb">Facebook</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Icon.png"
+              />
+              <a href="https://twitter.com/pmusweden">Twitter</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Icon-3.png"
+              />
+              <a href="https://www.instagram.com/pmu_sverige/">Instagram</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/10/PMU_logo_staende_vit.png"
+              />
+              <a href="https://pmu.se/om-oss/ansvar/">Klagomålsanmälan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact-info">
+          <pre>
+Pingstmissionens
+Utvecklingssamarbete,
+Box 151 44,
+167 15 Bromma.
+
+Org.nr:  802004-0575
+              </pre
+          >
+          <pre>
+Besöksadress: 
+Gustavslundsvägen 18 Alviks torg
+
+<a style="color: white;" href="https://www.pingst.se/om-pingst/organisation/90-konto/">90-konto</a>
+
+Plusgiro: 900050-6
+Swish: 9000506
+              </pre>
+          <pre>
+Tel: 08–608 96 00,
+E-post: <a style="color: white;" href="mailto:info@pmu.se">info@pmu.se</a>
+
+Second Hand:
+<a style="color: white;" href="mailto:secondhand@pmu.se">secondhand@pmu.se</a>
+<a style="color: grey;">Kontakta din lokala
+butik för frågor gällande
+öppettider, gåvomottagning
+eller hämtningar.</a>
+              </pre>
+        </div>
+      </article>
+
+      <article class="lower-wrapper">
+        <ul>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2023/05/tryggtgivande_vit-e1683876446956.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/06/logo_svenskinsamlingskontroll.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/06/logo_swish.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/06/logo_payex.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <script src="HomeSite/app.js"></script>
+  </body>
+</html>

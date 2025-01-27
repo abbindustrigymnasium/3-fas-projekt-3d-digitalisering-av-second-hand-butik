@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panorama Viewer</title>
+    <link rel="stylesheet" href="360Site/style.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
+    />
+    <link rel="stylesheet" href="360Site/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link href="https://fonts.cdnfonts.com/css/archer-2" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header_banner">
+        <a href="https://pmu.se/bistand/sidabeslut/">
+          <span style="font-size: 12pt; color: #ffffff">
+            PMU förlorar 40 miljoner till världens mest utsatta. Läs mer här!
+          </span>
+        </a>
+      </div>
+
+      <div class="header_inner">
+        <a href="index.html">
+          <img
+            class="header_inner_logo"
+            src="https://pmu.se/wp-content/themes/pmu/assets/img/header_logo.png"
+          />
+        </a>
+        <div class="header_inner_actions">
+          <div class="header_inner_navbar">
+            <div class="header__inner">
+              <div class="header__inner--nav">
+                <ul id="header-nav" class="header-nav">
+                  <li id="menu-item-1" class="menu-item menu-item-has-children">
+                    <a href="#">Stöd oss</a>
+                    <img
+                      style="cursor: pointer"
+                      src="https://pmu.se/wp-content/themes/pmu/assets/img/nav-arrow-green.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="menu-item-2" class="menu-item menu-item-has-children">
+                    <a href="#">Vårt arbete</a>
+                    <img
+                      style="cursor: pointer"
+                      src="https://pmu.se/wp-content/themes/pmu/assets/img/nav-arrow-green.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="menu-item-3" class="menu-item menu-item-has-children">
+                    <a href="#">Second Hand</a>
+                    <img
+                      style="cursor: pointer"
+                      src="https://pmu.se/wp-content/themes/pmu/assets/img/nav-arrow-green.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <span id="ktkheader">
+                <div class="swheader">
+                  <div class="logo-wrapper">
+                    <button class="swheader__button swish_button"></button>
+                    <p class="logo-text">Swisha en gåva</p>
+                  </div>
+                </div>
+              </span>
+              <!-- Sökformulär -->
+              <form
+                id="searchform"
+                class="search-form"
+                role="search"
+                method="get"
+                action="https://pmu.se/"
+              >
+                <div class="toggle-search"></div>
+              </form>
+              <!-- Varukorgsikon -->
+              <div class="cart-trigger__wrapper">
+                <a class="cart-trigger-wrapper" href="#">
+                  <img
+                    class="cart-trigger-prevent"
+                    src="https://pmu.se/wp-content/themes/pmu/assets/img/toggle-cart.svg"
+                  />
+                </a>
+              </div>
+              <!-- Hamburger-menyn för mobilanvändare -->
+              <article style="padding-top: 3px; cursor: pointer">
+                <img
+                  class="header__inner--hamburger"
+                  src="https://pmu.se/wp-content/themes/pmu/assets/img/hamburger.svg"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sektion för 360° bilder -->
+    <section class="hero-360">
+      <div class="Titel360">
+        <h1>360° Bilder Över PMUs Layout</h1>
+      </div>
+      <div class="panoramacontainer">
+        <div>
+          <h2>Ingång</h2>
+          <img
+            class="panorama"
+            id="panorama1"
+            src="360Site/images/1Ingång.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Cafét</h2>
+          <img
+            class="panorama"
+            id="panorama2"
+            src="360Site/images/2Cafet.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Lekrummet</h2>
+          <img
+            class="panorama"
+            id="panorama3"
+            src="360Site/images/3Lekrummet.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Dam 1</h2>
+          <img
+            class="panorama"
+            id="panorama4"
+            src="360Site/images/4Dam1.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Dam 2</h2>
+          <img
+            class="panorama"
+            id="panorama5"
+            src="360Site/images/5Dam2.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Herr</h2>
+          <img
+            class="panorama"
+            id="panorama6"
+            src="360Site/images/6Herr.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Barn</h2>
+          <img
+            class="panorama"
+            id="panorama7"
+            src="360Site/images/7Barn.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Torget</h2>
+          <img
+            class="panorama"
+            id="panorama8"
+            src="360Site/images/8Torget.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Husgeråd</h2>
+          <img
+            class="panorama"
+            id="panorama9"
+            src="360Site/images/9Husgegård.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Textil</h2>
+          <img
+            class="panorama"
+            id="panorama10"
+            src="360Site/images/10Textil.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Leksaker & Fritid</h2>
+          <img
+            class="panorama"
+            id="panorama11"
+            src="360Site/images/11Leksaker&Fritid.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Elektronik</h2>
+          <img
+            class="panorama"
+            id="panorama12"
+            src="360Site/images/12Elektronik.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Elektronik2</h2>
+          <img
+            class="panorama"
+            id="panorama13"
+            src="360Site/images/13Elektronik2.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Möbler</h2>
+          <img
+            class="panorama"
+            id="panorama14"
+            src="360Site/images/14Möbler.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Böcker & Kassa</h2>
+          <img
+            class="panorama"
+            id="panorama15"
+            src="360Site/images/15Böcker&Kassa.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2>Tavlor</h2>
+          <img
+            class="panorama"
+            id="panorama16"
+            src="360Site/images/16Textiler.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-sektion med kontaktinformation och sociala medier -->
+    <section class="footer-section">
+      <article class="upper-wrapper">
+        <div class="footer-social-media">
+          <ul>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Group-428.png"
+              />
+              <a href="https://www.youtube.com/user/PMUchannel">Youtube</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Icon-2.png"
+              />
+              <a href="https://www.facebook.com/PMUfb">Facebook</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Icon.png"
+              />
+              <a href="https://twitter.com/pmusweden">Twitter</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2021/11/Icon-3.png"
+              />
+              <a href="https://www.instagram.com/pmu_sverige/">Instagram</a>
+            </li>
+            <li>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/10/PMU_logo_staende_vit.png"
+              />
+              <a href="https://pmu.se/om-oss/ansvar/">Klagomålsanmälan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact-info">
+          <pre>
+Pingstmissionens
+Utvecklingssamarbete,
+Box 151 44,
+167 15 Bromma.
+
+Org.nr:  802004-0575
+              </pre
+          >
+          <pre>
+Besöksadress: 
+Gustavslundsvägen 18 Alviks torg
+
+<a style="color: white;" href="https://www.pingst.se/om-pingst/organisation/90-konto/">90-konto</a>
+
+Plusgiro: 900050-6
+Swish: 9000506
+              </pre>
+          <pre>
+Tel: 08–608 96 00,
+E-post: <a style="color: white;" href="mailto:info@pmu.se">info@pmu.se</a>
+
+Second Hand:
+<a style="color: white;" href="mailto:secondhand@pmu.se">secondhand@pmu.se</a>
+<a style="color: grey;">Kontakta din lokala
+butik för frågor gällande
+öppettider, gåvomottagning
+eller hämtningar.</a>
+              </pre>
+        </div>
+      </article>
+
+      <article class="lower-wrapper">
+        <ul>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2023/05/tryggtgivande_vit-e1683876446956.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/06/logo_svenskinsamlingskontroll.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/06/logo_swish.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href>
+              <img
+                src="https://pmu-site.b-cdn.net/wp-content/uploads/2022/06/logo_payex.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <!-- Länkar till anpassat JavaScript -->
+    <script src="360Site/custom.js"></script>
+  </body>
+</html>

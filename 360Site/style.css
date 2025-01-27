@@ -1,0 +1,200 @@
+/* General Reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Archer;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 66px 0 0 !important;
+  padding-top: 95px !important;
+  font-family: Archer;
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
+  color: white; /* Ensure the text color is set to white */
+}
+
+p {
+  margin: 0;
+}
+
+/* Header Styles */
+
+/* Panorama Grid Container */
+.panoramacontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Start with 4 columns */
+  gap: 30px; /* Space between grid items */
+  width: calc(100% - 176px); /* Subtract the total padding (88px * 2) */
+  margin: 20px auto; /* Center the grid on the page */
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+.panoramacontainer > div {
+  width: 100%; /* Ensure the divs take up the full width of the grid column */
+  margin: 0; /* Remove auto margin to ensure full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.panoramacontainer div h2 {
+  text-align: center;
+  color: white; /* Ensure the text color is set to white */
+  font-size: 35px;
+}
+
+/* Individual Image Cells (for still image preview) */
+.panoramacontainer .panorama {
+  width: 100%;
+  height: 200px; /* Fixed height for image boxes */
+  background-color: #000; /* Black background as a fallback */
+  position: relative;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background-size: cover; /* Ensure the images cover the area */
+  background-position: center; /* Center the images */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .panoramacontainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+@media (max-width: 992px) {
+  .panoramacontainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .panoramacontainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (max-width: 576px) {
+  .panoramacontainer {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+  }
+}
+
+/* Pannellum Custom Styling */
+.pnlm-loading-box {
+  display: none !important; /* Hide loading message */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1200px;
+  background: none; /* Ensure the background is transparent */
+  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+}
+
+#modal-panorama {
+  width: 100%;
+  height: 100%; /* Ensure the panorama fills the modal content */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.blur-background > *:not(.modal) {
+  filter: blur(5px);
+}
+
+.Titel360 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.hero-360 {
+  padding-top: 20px;
+  background-color: #262222;
+  padding-bottom: 100px;
+}
+
+/* start of cross on side */
+
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; /* Adjusted for better alignment */
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it stays above the panorama viewer */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.modal .close:hover {
+  background: #111; /* Optional hover effect */
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
